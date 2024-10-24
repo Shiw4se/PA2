@@ -1,14 +1,16 @@
-#ifndef FUNCA_H
+#ifndef FUNCA_H  // Захист від повторного включення заголовкового файлу
 #define FUNCA_H
-#include <complex>
 
-class FuncA{
-	public:
-	FuncA();
-	virtual ~FuncA() {}
+#include <complex> // Підключаємо бібліотеку для роботи з комплексними числами
 
-	std::complex<double> Calculate(int m,std::complex<double> x);
+// Оголошення класу FuncA
+class FuncA {
+    public:
+        FuncA();  // Конструктор класу
+        virtual ~FuncA() {}  // Віртуальний деструктор для коректного очищення при успадкуванні
+
+        std::complex<double> Calculate(int m, std::complex<double> x); // Метод для обчислення значення
 };
 
-#endif
+#endif // Завершуємо умовну компіляцію для цього заголовкового файлу
 
