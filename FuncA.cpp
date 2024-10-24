@@ -1,8 +1,9 @@
-#include "FuncA.h"
-#include <cmath>
-#include <complex>
+#include "FuncA.h"          // Підключення заголовочного файлу FuncA, що містить визначення класу FuncA
+#include <cmath>           // Підключення математичної бібліотеки для математичних функцій
+#include <complex>         // Підключення бібліотеки для роботи з комплексними числами
 
-FuncA::FuncA(){
+// Конструктор класу FuncA
+FuncA::FuncA() {
 }
 
 long long Factorial(int num){

@@ -2,12 +2,14 @@
 #define FUNCA_H
 #include <complex>
 
-class FuncA{
-	public:
-	FuncA();
-	virtual ~FuncA() {}
+// Оголошення класу FuncA
+class FuncA {
+    public:
+        FuncA();  // Конструктор класу
+        virtual ~FuncA() {}  // Віртуальний деструктор для коректного очищення при успадкуванні
 
-	std::complex<double> Calculate(int m,std::complex<double> x);
+        // Метод для обчислення значення функції
+        std::complex<double> Calculate(int m, std::complex<double> x);
 };
 
 #endif
